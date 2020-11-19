@@ -1,8 +1,19 @@
-/* eslint-disable react/prop-types */
 import React from 'react'
+import PropTypes from 'prop-types'
+import GlobalStyles from '../styles/GlobalStyles'
 
-function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+function Portfolio({ Component, pageProps }) {
+  return (
+    <>
+      <Component {...pageProps} />
+      <GlobalStyles />
+    </>
+  )
 }
 
-export default MyApp
+Portfolio.propTypes = {
+  Component: PropTypes.any.isRequired,
+  pageProps: PropTypes.object.isRequired,
+}
+
+export default Portfolio

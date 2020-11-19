@@ -1,19 +1,17 @@
 import React from 'react'
 import Head from 'next/head'
 
+import Layout from '../components/Layout'
+
 export default function Home() {
   return (
-    <div>
+    <Layout>
       <Head>
-        <title>Create Next App</title>
+        <title>yuri brunetto</title>
         <link rel='icson' href='/favicon.ico' />
-
-        <button type='button' id='teste' name='aham'>
-          teset
-        </button>
       </Head>
 
-      <h1>Hello world</h1>
-    </div>
+      <h1>Hello world!</h1>
+    </Layout>
   )
 }
