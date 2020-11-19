@@ -1,7 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
 
-import Menu from '../Menu'
+import Nav from '../Nav'
 import { HeaderStyled, LogoStyled, WrapperStyled } from './styles'
 
 const Header = () => (
@@ -11,7 +11,7 @@ const Header = () => (
         <LogoStyled title='yuri brunetto'>yb</LogoStyled>
       </Link>
 
-      <Menu />
+      <Nav />
     </WrapperStyled>
   </HeaderStyled>
 )

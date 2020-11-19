@@ -19,6 +19,10 @@ const GlobalStyles = createGlobalStyle`
     background-color: var(--dark);
     color: #fff;
   }
+
+  a {
+    cursor: pointer;
+  }
 `
 
 export const CommonLimiter = styled.div`
