@@ -26,7 +26,7 @@ const GlobalStyles = createGlobalStyle`
 `
 
 export const CommonLimiter = styled.div`
-  width: 800px;
+  width: 960px;
   margin: 0 auto;
 `
 

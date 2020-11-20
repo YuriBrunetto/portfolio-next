@@ -4,13 +4,13 @@ import PropTypes from 'prop-types'
 import Header from '../Header'
 import Footer from '../Footer'
 
-import { MainStyled } from './styles'
+import { MainStyled, LimiterStyled } from './styles'
 
 function Layout({ children }) {
   return (
     <MainStyled>
       <Header />
-      {children}
+      <LimiterStyled>{children}</LimiterStyled>
       <Footer />
     </MainStyled>
   )

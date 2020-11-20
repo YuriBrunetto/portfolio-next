@@ -9,6 +9,7 @@ export const LinkStyled = styled.a`
   color: var(--text);
   text-decoration: none;
   position: relative;
+  transition: color 0.1s;
 
   &:hover {
     color: #fff;
@@ -33,7 +34,7 @@ export const LinkStyled = styled.a`
   ${(props) =>
     props.active &&
     `
-    font-weight: bold;
+    color: #fff;
 
     &:after {
       background-color: var(--purple);

@@ -1,5 +1,11 @@
 import React from 'react'
 
-const OpenSource = () => <div>teste</div>
+import Layout from '../../components/Layout'
 
-export default OpenSource
+export default function OpenSource() {
+  return (
+    <Layout>
+      <h1>open-source</h1>
+    </Layout>
+  )
+}
