@@ -15,7 +15,6 @@ const Nav = () => {
         </LinkStyled>
       </Link>
       <SeparatorStyled>{'//'}</SeparatorStyled>
-      {console.log(route)}
       <Link href='/open-source' title='open-source'>
         <LinkStyled title='open-source' active={route === '/open-source'}>
           open-source

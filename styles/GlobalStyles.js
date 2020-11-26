@@ -8,6 +8,11 @@ const GlobalStyles = createGlobalStyle`
     --text: #E5E5E5;
   }
 
+  ::selection {
+    background-color: #333;
+    color: var(--purple);
+  }
+
   * {
     margin: 0;
     padding: 0;
