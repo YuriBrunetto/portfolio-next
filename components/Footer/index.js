@@ -4,7 +4,7 @@ import { FooterStyled } from './styles'
 
 const Footer = () => (
   <FooterStyled>
-    <span>&copy; {new Date().getFullYear()}</span> made with ❤
+    <span>&copy; {new Date().getFullYear()}</span> made with 💜
   </FooterStyled>
 )
 
