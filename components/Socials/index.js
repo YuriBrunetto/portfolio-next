@@ -13,6 +13,8 @@ const Socials = () => (
             social.title !== 'E-mail' ? social.href : `mailto:${social.href}`
           }
           title={social.title}
+          target='_blank'
+          rel='noreferrer'
         >
           {social.title}
         </LinkStyled>

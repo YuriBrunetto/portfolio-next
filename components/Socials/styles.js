@@ -14,7 +14,7 @@ export const LinkStyled = styled.a`
   text-transform: uppercase;
 
   &:hover {
-    color: #fff;
+    color: var(--purple);
   }
 `
 
