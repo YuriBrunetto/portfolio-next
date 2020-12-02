@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 
 import socials from './data.json'
 import { SocialsStyled, LinkStyled, SeparatorStyled } from './styles'
@@ -6,9 +6,8 @@ import { SocialsStyled, LinkStyled, SeparatorStyled } from './styles'
 const Socials = () => (
   <SocialsStyled>
     {socials.map((social, i) => (
-      <>
+      <Fragment key={social.href}>
         <LinkStyled
-          key={i}
           href={
             social.title !== 'E-mail' ? social.href : `mailto:${social.href}`
           }
@@ -19,7 +18,7 @@ const Socials = () => (
           {social.title}
         </LinkStyled>
         {i !== socials.length - 1 && <SeparatorStyled>{'//'}</SeparatorStyled>}
-      </>
+      </Fragment>
     ))}
   </SocialsStyled>
 )
