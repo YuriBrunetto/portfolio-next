@@ -1,12 +1,12 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import GlobalStyles from '../styles/GlobalStyles'
+import GlobalStyles from '@/styles/global'
 import dynamic from 'next/dynamic'
 import 'nprogress/nprogress.css'
 
 const TopProgressBar = dynamic(
   () => {
-    return import('components/TopProgressBar')
+    return import('@/components/progress-bar')
   },
   { ssr: false }
 )

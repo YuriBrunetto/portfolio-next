@@ -1,20 +1,26 @@
 import React from 'react'
+import Head from 'next/head'
 import PropTypes from 'prop-types'
 import { FaStar } from 'react-icons/fa'
 import Emoji from 'react-emoji-render'
 
-import Layout from '../../components/Layout'
-import { HeaderStyled, RepositoriesStyled, RepositoryStyled } from './styles'
+import Layout from '@/components/layout'
+import {
+  HeaderStyled,
+  RepositoriesStyled,
+  RepositoryStyled,
+} from '@/styles/open-source'
 
 function OpenSource({ repos }) {
   return (
     <Layout>
+      <Head>
+        <title>open-source | yuri brunetto</title>
+      </Head>
       <HeaderStyled>
         <h1>open-source</h1>
         <h2>projects made by me, to the world</h2>
       </HeaderStyled>
-
-      {console.log('repos', repos)}
 
       <RepositoriesStyled>
         {repos.length &&
@@ -42,15 +48,7 @@ function OpenSource({ repos }) {
   )
 }
 
-OpenSource.defaultProps = {
-  repos: [],
-}
-
-OpenSource.propTypes = {
-  repos: PropTypes.array,
-}
-
-OpenSource.getInitialProps = async (ctx) => {
+OpenSource.getInitialProps = async () => {
   const res = await fetch(
     'https://api.github.com/users/YuriBrunetto/repos?sort=pushed'
   )
@@ -59,6 +57,14 @@ OpenSource.getInitialProps = async (ctx) => {
     .sort((a, b) => b.stargazers_count - a.stargazers_count)
     .slice(0, 6)
   return { repos }
+}
+
+OpenSource.defaultProps = {
+  repos: [],
+}
+
+OpenSource.propTypes = {
+  repos: PropTypes.array,
 }
 
 export default OpenSource

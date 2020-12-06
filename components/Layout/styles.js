@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { CommonLimiter } from '../../styles/GlobalStyles'
+import { CommonLimiter } from '../../styles/global'
 
 export const MainStyled = styled.main`
   display: flex;

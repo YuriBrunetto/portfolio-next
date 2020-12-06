@@ -10,8 +10,8 @@ const Nav = () => {
   return (
     <NavStyled>
       <Link href='/'>
-        <LinkStyled title='about' active={route === '/'}>
-          about
+        <LinkStyled title='home' active={route === '/'}>
+          home
         </LinkStyled>
       </Link>
       <SeparatorStyled>{'//'}</SeparatorStyled>
