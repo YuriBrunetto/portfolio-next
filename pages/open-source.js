@@ -13,6 +13,29 @@ function OpenSource({ repos }) {
     <Layout>
       <Head>
         <title>open-source | yuri brunetto</title>
+        <meta name='title' content='open-source | yuri brunetto' />
+        <meta name='description' content='projects made by me, to the world.' />
+
+        <meta property='og:type' content='website' />
+        <meta
+          property='og:url'
+          content='https://yuribrunetto.com.br/open-source'
+        />
+        <meta property='og:title' content='open-source | yuri brunetto' />
+        <meta
+          property='og:description'
+          content='projects made by me, to the world.'
+        />
+
+        <meta
+          property='twitter:url'
+          content='https://yuribrunetto.com.br/open-source'
+        />
+        <meta property='twitter:title' content='open-source | yuri brunetto' />
+        <meta
+          property='twitter:description'
+          content='projects made by me, to the world.'
+        />
       </Head>
       <HeaderStyled>
         <h1>open-source</h1>

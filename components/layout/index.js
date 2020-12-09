@@ -12,7 +12,7 @@ function Layout({ children }) {
     <>
       <Head>
         <meta name='theme-color' content='#706FD3' />
-        <title>hello, i&apos;m yuri!</title>
+        <title>yuri brunetto</title>
         <meta name='title' content='yuri brunetto' />
         <meta
           name='description'
@@ -26,7 +26,10 @@ function Layout({ children }) {
           property='og:description'
           content='yuri brunetto is a front-end developer, musician and lo-fi producer.'
         />
-        <meta property='og:image' content='./logo512.png' />
+        <meta
+          property='og:image'
+          content='https://yuribrunetto.com.br/logo512.png'
+        />
 
         <meta property='twitter:card' content='summary_large_image' />
         <meta property='twitter:url' content='https://yuribrunetto.com.br/' />
@@ -35,7 +38,10 @@ function Layout({ children }) {
           property='twitter:description'
           content='yuri brunetto is a front-end developer, musician and lo-fi producer.'
         />
-        <meta property='twitter:image' content='./twitter-card.png' />
+        <meta
+          property='twitter:image'
+          content='https://yuribrunetto.com.br/twitter-card.png'
+        />
       </Head>
 
       <MainStyled>
