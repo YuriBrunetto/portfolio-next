@@ -4,7 +4,9 @@ import Head from 'next/head'
 
 import Layout from '@/components/layout'
 import Socials from '@/components/socials'
+import Button from '@/components/button'
 import { WrapperStyled, PictureStyled, TextStyled } from '@/styles/home'
+import { ButtonWrapper } from '@/styles/global'
 
 export default function Home() {
   return (
@@ -42,6 +44,10 @@ export default function Home() {
           </p>
 
           <Socials />
+
+          <ButtonWrapper>
+            <Button href='#' title='download my curriculum' />
+          </ButtonWrapper>
         </TextStyled>
       </WrapperStyled>
     </Layout>

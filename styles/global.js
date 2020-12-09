@@ -35,4 +35,10 @@ export const CommonLimiter = styled.div`
   margin: 0 auto;
 `
 
+export const ButtonWrapper = styled.div`
+  display: flex;
+  justify-content: ${(props) => (props.align ? props.align : 'start')};
+  margin-top: 40px;
+`
+
 export default GlobalStyles

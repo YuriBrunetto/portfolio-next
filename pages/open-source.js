@@ -1,15 +1,12 @@
 import React from 'react'
 import Head from 'next/head'
 import PropTypes from 'prop-types'
-import { FaStar } from 'react-icons/fa'
-import Emoji from 'react-emoji-render'
 
 import Layout from '@/components/layout'
-import {
-  HeaderStyled,
-  RepositoriesStyled,
-  RepositoryStyled,
-} from '@/styles/open-source'
+import Repository from '@/components/repository'
+import Button from '@/components/button'
+import { HeaderStyled, RepositoriesStyled } from '@/styles/open-source'
+import { ButtonWrapper } from '@/styles/global'
 
 function OpenSource({ repos }) {
   return (
@@ -25,25 +22,19 @@ function OpenSource({ repos }) {
       <RepositoriesStyled>
         {repos.length &&
           repos.map((repo) => (
-            <RepositoryStyled
+            <Repository
               key={repo.id}
-              href={repo.clone_url}
-              title={repo.name}
-              target='_blank'
-              rel='noreferrer'
-            >
-              <RepositoryStyled.Title>
-                {repo.name}
-                <RepositoryStyled.Span>
-                  <FaStar /> {repo.stargazers_count}
-                </RepositoryStyled.Span>
-              </RepositoryStyled.Title>
-              <RepositoryStyled.Description>
-                <Emoji text={repo.description} />
-              </RepositoryStyled.Description>
-            </RepositoryStyled>
+              clone_url={repo.clone_url}
+              name={repo.name}
+              stargazers_count={repo.stargazers_count}
+              description={repo.description}
+            />
           ))}
       </RepositoriesStyled>
+
+      <ButtonWrapper align='center'>
+        <Button href='https://github.com/YuriBrunetto' title='see more' />
+      </ButtonWrapper>
     </Layout>
   )
 }

@@ -1,4 +1,5 @@
 import React from 'react'
+import Head from 'next/head'
 import PropTypes from 'prop-types'
 
 import Header from '@/components/header'
@@ -8,11 +9,17 @@ import { MainStyled, LimiterStyled } from './styles'
 
 function Layout({ children }) {
   return (
-    <MainStyled>
-      <Header />
-      <LimiterStyled>{children}</LimiterStyled>
-      <Footer />
-    </MainStyled>
+    <>
+      <Head>
+        <meta name='theme-color' content='#706FD3' />
+      </Head>
+
+      <MainStyled>
+        <Header />
+        <LimiterStyled>{children}</LimiterStyled>
+        <Footer />
+      </MainStyled>
+    </>
   )
 }
 
