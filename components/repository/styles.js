@@ -6,6 +6,10 @@ export const RepositoryStyled = styled.a`
   text-decoration: none;
   transition: 0.3s;
 
+  @media (max-width: 959px) {
+    padding: 16px;
+  }
+
   &:hover {
     background-color: rgba(255, 255, 255, 0.01);
   }
@@ -21,6 +25,10 @@ RepositoryStyled.Title = styled.div`
   display: flex;
   font-weight: bold;
   font-size: 20px;
+
+  @media (max-width: 959px) {
+    font-size: 16px;
+  }
 `
 
 RepositoryStyled.Span = styled.span`
@@ -29,6 +37,7 @@ RepositoryStyled.Span = styled.span`
   font-size: 12px;
   line-height: 16px;
   margin-left: 12px;
+  color: var(--purple);
 
   svg {
     fill: var(--purple);
@@ -41,4 +50,8 @@ RepositoryStyled.Span = styled.span`
 RepositoryStyled.Description = styled.div`
   color: rgba(255, 255, 255, 0.7);
   margin-top: 8px;
+
+  @media (max-width: 959px) {
+    font-size: 13px;
+  }
 `

@@ -31,7 +31,8 @@ const GlobalStyles = createGlobalStyle`
 `
 
 export const CommonLimiter = styled.div`
-  width: 960px;
+  max-width: 960px;
+  width: 100%;
   margin: 0 auto;
 `
 
@@ -39,6 +40,10 @@ export const ButtonWrapper = styled.div`
   display: flex;
   justify-content: ${(props) => (props.align ? props.align : 'start')};
   margin-top: 40px;
+
+  @media (max-width: 959px) {
+    margin-top: 24px;
+  }
 `
 
 export default GlobalStyles

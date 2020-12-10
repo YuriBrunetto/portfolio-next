@@ -1,8 +1,12 @@
 import styled from 'styled-components'
-import { CommonLimiter } from '../../styles/global'
+import { CommonLimiter } from '@/styles/global'
 
 export const HeaderStyled = styled.header`
   padding: 40px 0;
+
+  @media (max-width: 959px) {
+    padding: 16px 16px 32px;
+  }
 `
 
 export const WrapperStyled = styled(CommonLimiter)`

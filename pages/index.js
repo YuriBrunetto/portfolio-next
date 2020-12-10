@@ -27,8 +27,7 @@ export default function Home() {
           <p>
             i’m a front-end developer, musician and lo-fi producer. in love with{' '}
             <em>javascript</em>, <em>react</em> and <em>music</em>. currently
-            working as a react developer
-            <br /> @{' '}
+            working as a react developer @{' '}
             <a
               href='https://mysmartclinic.com.br/'
               title='My Smart Clinic'
