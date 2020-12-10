@@ -6,6 +6,7 @@ const SEO = ({ title, description, url }) => (
   <Head>
     <title>{title ? title : 'yuri brunetto'}</title>
     <link rel='icson' href='/favicon.ico' />
+    <link rel='manifest' href='/manifest.json' />
     <meta name='theme-color' content='#706FD3' />
     <meta name='title' content={title ? title : 'yuri brunetto'} />
     <meta
