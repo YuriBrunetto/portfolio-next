@@ -1,20 +1,17 @@
 import React from 'react'
 import Image from 'next/image'
-import Head from 'next/head'
 
 import Layout from '@/components/layout'
 import Socials from '@/components/socials'
 import Button from '@/components/button'
+import SEO from '@/components/seo'
 import { WrapperStyled, PictureStyled, TextStyled } from '@/styles/home'
 import { ButtonWrapper } from '@/styles/global'
 
 export default function Home() {
   return (
     <Layout>
-      <Head>
-        <title>yuri brunetto</title>
-        <link rel='icson' href='/favicon.ico' />
-      </Head>
+      <SEO />
 
       <WrapperStyled>
         <PictureStyled>
@@ -46,7 +43,7 @@ export default function Home() {
           <Socials />
 
           <ButtonWrapper>
-            <Button href='#' title='download my curriculum' />
+            <Button href='/curriculum.pdf' title='download my curriculum' />
           </ButtonWrapper>
         </TextStyled>
       </WrapperStyled>

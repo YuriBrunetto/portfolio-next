@@ -5,38 +5,19 @@ import PropTypes from 'prop-types'
 import Layout from '@/components/layout'
 import Repository from '@/components/repository'
 import Button from '@/components/button'
+import SEO from '@/components/seo'
 import { HeaderStyled, RepositoriesStyled } from '@/styles/open-source'
 import { ButtonWrapper } from '@/styles/global'
 
 function OpenSource({ repos }) {
   return (
     <Layout>
-      <Head>
-        <title>open-source | yuri brunetto</title>
-        <meta name='title' content='open-source | yuri brunetto' />
-        <meta name='description' content='projects made by me, to the world.' />
+      <SEO
+        title='open-source | yuri brunetto'
+        description='projects made by me, to the world.'
+        url='https://yuribrunetto.com.br/open-source'
+      />
 
-        <meta property='og:type' content='website' />
-        <meta
-          property='og:url'
-          content='https://yuribrunetto.com.br/open-source'
-        />
-        <meta property='og:title' content='open-source | yuri brunetto' />
-        <meta
-          property='og:description'
-          content='projects made by me, to the world.'
-        />
-
-        <meta
-          property='twitter:url'
-          content='https://yuribrunetto.com.br/open-source'
-        />
-        <meta property='twitter:title' content='open-source | yuri brunetto' />
-        <meta
-          property='twitter:description'
-          content='projects made by me, to the world.'
-        />
-      </Head>
       <HeaderStyled>
         <h1>open-source</h1>
         <h2>projects made by me, to the world</h2>
