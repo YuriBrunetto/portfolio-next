@@ -1,6 +1,9 @@
 import React from 'react'
 import Head from 'next/head'
 import PropTypes from 'prop-types'
+import groq from 'groq'
+
+import client from '../client'
 
 import Layout from '@/components/layout'
 import Repository from '@/components/repository'
@@ -17,6 +20,8 @@ function OpenSource({ repos }) {
         description='projects made by me, to the world.'
         url='https://yuribrunetto.com.br/open-source'
       />
+
+      {console.log('repos', repos)}
 
       <HeaderStyled>
         <h1>open-source</h1>
@@ -44,14 +49,18 @@ function OpenSource({ repos }) {
 }
 
 OpenSource.getInitialProps = async () => {
-  const res = await fetch(
-    'https://api.github.com/users/YuriBrunetto/repos?sort=pushed'
-  )
-  let repos = await res.json()
-  repos = repos
-    .sort((a, b) => b.stargazers_count - a.stargazers_count)
-    .slice(0, 6)
+  const repos = await client.fetch(groq`
+    *[_type == "post"]
+  `)
   return { repos }
+  // const res = await fetch(
+  //   'https://api.github.com/users/YuriBrunetto/repos?sort=pushed'
+  // )
+  // let repos = await res.json()
+  // repos = repos
+  //   .sort((a, b) => b.stargazers_count - a.stargazers_count)
+  //   .slice(0, 6)
+  // return { repos }
 }
 
 OpenSource.defaultProps = {

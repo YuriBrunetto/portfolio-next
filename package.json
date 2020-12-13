@@ -8,6 +8,8 @@
     "start": "next start"
   },
   "dependencies": {
+    "@sanity/client": "^2.1.0",
+    "groq": "^2.0.9",
     "next": "10.0.2",
     "nprogress": "^0.2.0",
     "prop-types": "^15.7.2",
