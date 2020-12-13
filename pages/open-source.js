@@ -21,8 +21,6 @@ function OpenSource({ repos }) {
         url='https://yuribrunetto.com.br/open-source'
       />
 
-      {console.log('repos', repos)}
-
       <HeaderStyled>
         <h1>open-source</h1>
         <h2>projects made by me, to the world</h2>
@@ -32,11 +30,10 @@ function OpenSource({ repos }) {
         {repos.length &&
           repos.map((repo) => (
             <Repository
-              key={repo.id}
-              clone_url={repo.clone_url}
-              name={repo.name}
-              stargazers_count={repo.stargazers_count}
-              description={repo.description}
+              key={repo._id}
+              url={repo.url}
+              title={repo.title}
+              description={repo.description[0].children[0].text}
             />
           ))}
       </RepositoriesStyled>
@@ -49,18 +46,12 @@ function OpenSource({ repos }) {
 }
 
 OpenSource.getInitialProps = async () => {
-  const repos = await client.fetch(groq`
-    *[_type == "post"]
+  let repos = await client.fetch(groq`
+    *[_type == "repos"]
   `)
+  repos = repos.sort((a, b) => a.title.localeCompare(b.title))
+
   return { repos }
-  // const res = await fetch(
-  //   'https://api.github.com/users/YuriBrunetto/repos?sort=pushed'
-  // )
-  // let repos = await res.json()
-  // repos = repos
-  //   .sort((a, b) => b.stargazers_count - a.stargazers_count)
-  //   .slice(0, 6)
-  // return { repos }
 }
 
 OpenSource.defaultProps = {

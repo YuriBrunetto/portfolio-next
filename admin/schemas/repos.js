@@ -1,6 +1,6 @@
 export default {
-  name: 'category',
-  title: 'Category',
+  name: 'repos',
+  title: 'Repositories',
   type: 'document',
   fields: [
     {
@@ -9,9 +9,14 @@ export default {
       type: 'string',
     },
     {
+      name: 'url',
+      title: 'Repository URL',
+      type: 'string',
+    },
+    {
       name: 'description',
       title: 'Description',
-      type: 'text',
+      type: 'blockContent',
     },
   ],
 }

@@ -1,23 +1,12 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Emoji from 'react-emoji-render'
-import { FaStar } from 'react-icons/fa'
 
 import { RepositoryStyled } from './styles'
 
-const Repository = ({ clone_url, name, stargazers_count, description }) => (
-  <RepositoryStyled
-    href={clone_url}
-    title={name}
-    target='_blank'
-    rel='noreferrer'
-  >
-    <RepositoryStyled.Title>
-      {name}
-      <RepositoryStyled.Span>
-        <FaStar /> {stargazers_count}
-      </RepositoryStyled.Span>
-    </RepositoryStyled.Title>
+const Repository = ({ url, title, description }) => (
+  <RepositoryStyled href={url} title={title} target='_blank' rel='noreferrer'>
+    <RepositoryStyled.Title>{title}</RepositoryStyled.Title>
     {!!description && (
       <RepositoryStyled.Description>
         <Emoji text={description} />
@@ -27,9 +16,8 @@ const Repository = ({ clone_url, name, stargazers_count, description }) => (
 )
 
 Repository.propTypes = {
-  clone_url: PropTypes.string.isRequired,
-  name: PropTypes.string.isRequired,
-  stargazers_count: PropTypes.number.isRequired,
+  url: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
 }
 
