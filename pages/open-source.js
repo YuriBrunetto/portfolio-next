@@ -39,7 +39,10 @@ function OpenSource({ repos }) {
       </RepositoriesStyled>
 
       <ButtonWrapper align='center'>
-        <Button href='https://github.com/YuriBrunetto' title='see more' />
+        <Button
+          href='https://github.com/YuriBrunetto?tab=repositories'
+          title='see more'
+        />
       </ButtonWrapper>
     </Layout>
   )
