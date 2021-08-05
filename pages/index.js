@@ -26,9 +26,8 @@ export default function Home() {
           <h1>hello, i&apos;m yuri!</h1>
           <p>
             <em>front-end developer</em> with 9 years of experience in web
-            development,
-            <em>musician</em> and <em>producer</em>. currently working as react
-            developer @{' '}
+            development, <em>musician</em> and <em>producer</em>. currently
+            working as react developer @{' '}
             <a
               href='https://mysmartclinic.com.br/'
               title='My Smart Clinic'
