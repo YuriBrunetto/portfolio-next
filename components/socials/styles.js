@@ -28,7 +28,7 @@ export const LinkStyled = styled.a`
 
 export const SeparatorStyled = styled.span`
   margin: 0 10px;
-  color: var(--text);
+  color: rgba(255, 255, 255, 0.3);
   font-size: 12px;
 
   @media (max-width: 959px) {

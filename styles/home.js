@@ -18,6 +18,7 @@ export const PictureStyled = styled.div`
   flex: 0 0 140px;
   border-radius: 50%;
   border: 3px solid var(--purple);
+  overflow: hidden;
 
   @media (max-width: 959px) {
     width: 100px;

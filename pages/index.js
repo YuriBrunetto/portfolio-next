@@ -16,7 +16,7 @@ export default function Home() {
       <WrapperStyled>
         <PictureStyled>
           <Image
-            src='/assets/me.png'
+            src='/assets/me.jpg'
             alt='Yuri Brunetto'
             width={140}
             height={140}
@@ -25,9 +25,10 @@ export default function Home() {
         <TextStyled>
           <h1>hello, i&apos;m yuri!</h1>
           <p>
-            i’m a front-end developer, musician and lo-fi producer. in love with{' '}
-            <em>javascript</em>, <em>react</em> and <em>music</em>. currently
-            working as a react developer @{' '}
+            <em>front-end developer</em> with 9 years of experience in web
+            development,
+            <em>musician</em> and <em>producer</em>. currently working as react
+            developer @{' '}
             <a
               href='https://mysmartclinic.com.br/'
               title='My Smart Clinic'
@@ -36,13 +37,13 @@ export default function Home() {
             >
               my smart clinic
             </a>
-            . i have 8 years of experience in web development.
+            .
           </p>
 
           <Socials />
 
           <ButtonWrapper>
-            <Button href='/curriculum.pdf' title='download my curriculum' />
+            <Button href='/curriculum.pdf' title='curriculum' />
           </ButtonWrapper>
         </TextStyled>
       </WrapperStyled>
