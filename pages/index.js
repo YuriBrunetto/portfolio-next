@@ -25,16 +25,16 @@ export default function Home() {
         <TextStyled>
           <h1>hello, i&apos;m yuri!</h1>
           <p>
-            <em>front-end developer</em> with 9 years of experience in web
-            development, <em>musician</em> and <em>producer</em>. currently
-            working as react developer @{' '}
+            9 years of experience in web development, <span>musician</span> and{' '}
+            <span>producer</span>. currently working as{' '}
+            <span>software engineer</span> @{' '}
             <a
-              href='https://mysmartclinic.com.br/'
-              title='My Smart Clinic'
+              href='https://tmrw.org/'
+              title='TMRW'
               target='_blank'
               rel='noreferrer'
             >
-              my smart clinic
+              TMRW
             </a>
             .
           </p>

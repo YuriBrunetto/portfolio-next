@@ -53,10 +53,21 @@ export const TextStyled = styled.div`
       line-height: 24px;
     }
 
+    span {
+      color: #999;
+    }
+
     a {
       color: var(--purple);
       text-decoration: none;
       font-weight: bold;
+      display: inline-block;
+      border-bottom: 2px solid transparent;
+      transition: 0.2s border-bottom-color;
+
+      &:hover {
+        border-bottom-color: var(--purple);
+      }
     }
   }
 `
