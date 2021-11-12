@@ -6,7 +6,7 @@ export const NavStyled = styled.nav`
 `
 
 export const LinkStyled = styled.a`
-  color: var(--text);
+  color: rgba(255, 255, 255, 0.7);
   text-decoration: none;
   position: relative;
   transition: color 0.1s;
@@ -43,6 +43,6 @@ export const LinkStyled = styled.a`
 `
 
 export const SeparatorStyled = styled.span`
-  color: var(--text);
+  color: rgba(255, 255, 255, 0.7);
   margin: 0 12px;
 `
