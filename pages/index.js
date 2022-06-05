@@ -25,7 +25,7 @@ export default function Home() {
         <TextStyled>
           <h1>hello, i&apos;m yuri!</h1>
           <p>
-            9 years of experience in web development, <span>musician</span> and{' '}
+            10 years of experience in web development, <span>musician</span> and{' '}
             <span>producer</span>. currently working as{' '}
             <span>software engineer</span> @{' '}
             <a
