@@ -14,7 +14,7 @@ const SEO = ({ title, description, url }) => (
       content={
         description
           ? description
-          : 'yuri brunetto is a front-end developer, musician and lo-fi producer.'
+          : 'yuri brunetto is a software engineer, musician and producer.'
       }
     />
 
@@ -29,7 +29,7 @@ const SEO = ({ title, description, url }) => (
       content={
         description
           ? description
-          : 'yuri brunetto is a front-end developer, musician and lo-fi producer.'
+          : 'yuri brunetto is a software engineer, musician and producer.'
       }
     />
     <meta
@@ -48,7 +48,7 @@ const SEO = ({ title, description, url }) => (
       content={
         description
           ? description
-          : 'yuri brunetto is a front-end developer, musician and lo-fi producer.'
+          : 'yuri brunetto is a software engineer, musician and producer.'
       }
     />
     <meta
