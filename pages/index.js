@@ -30,12 +30,12 @@ export default function Home() {
             <span>producer</span>. currently working as{' '}
             <span>software engineer</span> @{' '}
             <a
-              href='https://tmrw.org/'
-              title='TMRW'
+              href='https://truelogic.io/'
+              title='Truelogic'
               target='_blank'
               rel='noreferrer'
             >
-              TMRW
+              Truelogic
             </a>
             .
           </p>

@@ -24,7 +24,7 @@ RepositoryStyled.Title = styled.div`
   color: #fff;
   display: flex;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 18px;
 
   @media (max-width: 959px) {
     font-size: 16px;
@@ -50,8 +50,9 @@ RepositoryStyled.Span = styled.span`
 RepositoryStyled.Description = styled.div`
   color: rgba(255, 255, 255, 0.7);
   margin-top: 8px;
+  font-size: 14px;
 
   @media (max-width: 959px) {
-    font-size: 13px;
+    font-size: 12px;
   }
 `
