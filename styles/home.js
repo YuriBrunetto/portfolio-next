@@ -20,6 +20,11 @@ export const PictureStyled = styled.div`
   border: 3px solid var(--purple);
   overflow: hidden;
 
+  img {
+    width: 100%;
+    height: 100%;
+  }
+
   @media (max-width: 959px) {
     width: 100px;
     height: 100px;

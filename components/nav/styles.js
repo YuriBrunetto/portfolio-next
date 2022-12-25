@@ -5,7 +5,7 @@ export const NavStyled = styled.nav`
   align-items: center;
 `
 
-export const LinkStyled = styled.a`
+export const LinkStyled = styled.div`
   color: rgba(255, 255, 255, 0.7);
   text-decoration: none;
   position: relative;
