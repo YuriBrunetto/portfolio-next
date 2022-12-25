@@ -27,17 +27,7 @@ export default function Home() {
           <p>
             <span>senior front-end developer</span> with 10 years of experience
             in web development; also <span>musician</span> and{' '}
-            <span>producer</span>. currently working as{' '}
-            <span>software engineer</span> @{' '}
-            <a
-              href='https://truelogic.io/'
-              title='Truelogic'
-              target='_blank'
-              rel='noreferrer'
-            >
-              Truelogic
-            </a>
-            .
+            <span>producer</span>. currently working as <span>freelancer</span>.
           </p>
 
           <Socials />
