@@ -7,6 +7,10 @@ export const HeaderStyled = styled.header`
   @media (max-width: 959px) {
     padding: 16px 16px 32px;
   }
+
+  a {
+    text-decoration: none;
+  }
 `
 
 export const WrapperStyled = styled(CommonLimiter)`
@@ -15,7 +19,7 @@ export const WrapperStyled = styled(CommonLimiter)`
   align-items: center;
 `
 
-export const LogoStyled = styled.a`
+export const LogoStyled = styled.div`
   font-size: 32px;
   font-weight: bold;
   color: #fff;
