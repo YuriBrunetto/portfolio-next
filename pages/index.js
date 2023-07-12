@@ -27,7 +27,7 @@ export default function Home() {
           <p>
             <span>senior front-end developer</span> with 10 years of experience
             in web development; also <span>musician</span> and{' '}
-            <span>producer</span>. currently working as <span>freelancer</span>.
+            <span>producer</span>. currently working as <span>fullstack developer</span> @ <span>vorotech</span>.
           </p>
 
           <Socials />
