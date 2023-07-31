@@ -27,15 +27,16 @@ export default function Home() {
           <p>
             <span>senior front-end developer</span> with 10 years of experience
             in web development; also <span>musician</span> and{' '}
-            <span>producer</span>. currently working as{' '}
-            <span>fullstack developer</span> @ <span>vorotech</span>.
+            <span>producer</span>.<br />
+            currently working as <span>fullstack developer</span> @{' '}
+            <span>vorotech</span>.
           </p>
 
           <Socials />
 
-          <ButtonWrapper>
-            <Button href='/curriculum.pdf' title='curriculum' />
-          </ButtonWrapper>
+          {/* <ButtonWrapper> */}
+          {/*   <Button href='/curriculum.pdf' title='curriculum' /> */}
+          {/* </ButtonWrapper> */}
         </TextStyled>
       </WrapperStyled>
     </Layout>
