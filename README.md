@@ -1,6 +1,6 @@
 # yuribrunetto.com.br 👨🏽‍💻
 
-my personal website, technologies used:
+✨ my personal website, technologies used:
 
 - next.js
 - styled components
